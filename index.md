@@ -15,7 +15,7 @@ Por Tubo</h4>
 
     <script type="text/javascript">
         alert("Calculadora de Prumada DGOI \n criado por Lucas Ribeiro");
-        alert("Padrão para Prumada de 8 Tubos 6 Fibras por Tudo");
+        alert("Padrão para Prumada de 8 Tubos 6 Fibras por Tubo");
         var NumeracaoCaboRise = [
             [0,0],
             [1,6],

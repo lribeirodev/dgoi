@@ -33,7 +33,7 @@ Por Tubo</h4>
 
         var coresRiseFibra = ["", "VIOLETA", "VERMELHO", "AZUL", "BRANCA", "AMARELA", "VERDE"];
 
-        var opt = prompt("Digite a numeração da caixa para saber");
+        var opt = prompt("Digite a numeração, para saber a cor do tubo e da fibra");
 
         var respTubo, respFibra, cabo;
 

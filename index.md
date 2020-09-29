@@ -1,37 +1,135 @@
-## Welcome to GitHub Pages
+<html>
 
-You can use the [editor on GitHub](https://github.com/lribeirodev/dgoi/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head></head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+ <center>
+      
+      <h1>Calculadora DGOI Em fase de Testes</h1>
+      <h3>Criado por Lucas Ribeiro</h3>
+      <h4>Atualize a página para calcular novamente</h4>
+      <h4>Contato: 11 94131-4539</h4>
+      <h4>Adicione a página a sua tela inicial </h4>
+      <h4>Calcula para Padrão Prumada de 8 Tubos 6 Fibras 
+Por Tubo</h4>
 
-### Markdown
+    <script type="text/javascript">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        var NumeracaoCaboRise = [
+            [0,0],
+            [1,6],
+            [7,12],
+            [13,18],
+            [19,24],
+            [25,30],
+            [31,36],
+            [37,42],
+            [43,48]
+        ];
 
-```markdown
-Syntax highlighted code block
+        var coresTuboRise = ["", "VERDE","AMARELO"
+        ,"BRANCO","AZUL","VERMELHO","VIOLETA","MARROM","ROSA"];
 
-# Header 1
-## Header 2
-### Header 3
+        var coresRiseFibra = ["", "VIOLETA", "VERMELHO", "AZUL", "BRANCA", "AMARELA", "VERDE"];
 
-- Bulleted
-- List
+        var opt = prompt("Digite a numeração da caixa para saber \n a cor da fibra e do tubo? Padrao Cabo Rise 8 tubos 6 Fibras por Tubo");
 
-1. Numbered
-2. List
+        var respTubo, respFibra, cabo;
 
-**Bold** and _Italic_ and `Code` text
+        function validarCorTubo(){
+            
+            var o = opt;
+            cabo = 1;
+            if(o >= 49 && o <= 96){
+                o = o - 48;
+                cabo = 2;
+            }else if(o >= 97 && o <= 144){
+               o = o - 96;
+               cabo = 3;
+            }
 
-[Link](url) and ![Image](src)
-```
+            if(o >= 1 && o < 1+6){
+                respTubo = coresTuboRise[1];
+            }else if(o >= 7 && o < 7+6){
+                respTubo = coresTuboRise[2];
+            }else if(o >= 13 && o < 13+6){
+                respTubo = coresTuboRise[3]
+            }else if(o >= 19 && o < 19+6){
+                respTubo = coresTuboRise[4]
+            }else if(o >= 25 && o < 25+6){
+                respTubo = coresTuboRise[5]
+            }else if(o >= 31 && o < 31+6){
+                respTubo = coresTuboRise[6]
+            }else if(o >= 37 && o < 37+6){
+                respTubo = coresTuboRise[7]
+            }else if(o >= 43 && o < 43+6){
+                respTubo = coresTuboRise[8]
+            }
+                        
+        }
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+      function validarCorFibra(){
+            var o = opt;
+            
+            if(o >= 49 && o <= 96){
+                o = o - 48;
+            }else if(o >= 97 && o <= 144){
+               o = o - 96;
+            }
+            
+            var x = 0;
+            
+            if(o >= 1 && o < 1+6){
+                x = 1+6 - o;
+            }else if(o >= 7 && o < 7+6){
+                x = 7+6 - o;
+            }else if(o >= 13 && o < 13+6){
+                x = 13+6 - o;
+            }else if(o >= 19 && o < 19+6){
+                x = 19+6 - o;
+            }else if(o >= 25 && o < 25+6){
+                x = 25+6 - o;
+            }else if(o >= 31 && o < 31+6){
+                x = 31+6 - o;
+            }else if(o >= 37 && o < 37+6){
+                x = 37+6 - o;
+            }else if(o >= 43 && o < 43+6){
+                x = 43+6 - o;
+            }
+            
+            o = x;
+            
+            switch(o){
+              case 1:
+                  respFibra = coresRiseFibra[1];
+                  break;
+                case 2:
+                  respFibra = coresRiseFibra[2];
+                  break;
+                case 3:
+                  respFibra = coresRiseFibra[3];
+                  break;
+                case 4:
+                  respFibra = coresRiseFibra[4];
+                  break;
+                case 5:
+                  respFibra = coresRiseFibra[5];
+                  break;
+                case 6:
+                  respFibra = coresRiseFibra[6];
+                  break;
+            }
+            
+      }
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lribeirodev/dgoi/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+      validarCorTubo();
+      validarCorFibra();
 
-### Support or Contact
+      alert("CABO " + cabo + " TUBO " + respTubo + " COR DA FIBRA " + respFibra);
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    </script>
+
+</body>
+
+</html>

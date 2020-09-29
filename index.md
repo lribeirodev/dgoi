@@ -14,7 +14,8 @@
 Por Tubo</h4>
 
     <script type="text/javascript">
-
+        alert("Calculadora de Prumada DGOI \n criado por Lucas Ribeiro");
+        alert("Padrão para Prumada de 8 Tubos 6 Fibras por Tudo");
         var NumeracaoCaboRise = [
             [0,0],
             [1,6],
@@ -32,7 +33,7 @@ Por Tubo</h4>
 
         var coresRiseFibra = ["", "VIOLETA", "VERMELHO", "AZUL", "BRANCA", "AMARELA", "VERDE"];
 
-        var opt = prompt("Digite a numeração da caixa para saber \n a cor da fibra e do tubo? Padrao Cabo Rise 8 tubos 6 Fibras por Tubo");
+        var opt = prompt("Digite a numeração da caixa para saber");
 
         var respTubo, respFibra, cabo;
 
